@@ -1,0 +1,46 @@
+/* Position the sidebar container at the bottom */
+.sidenav-container {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Circle Button Container */
+.circle-button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+/* Circle Button Styling */
+.circle-button {
+  width: 50px;
+  height: 50px;
+  background-color: #009DDC;
+  color: #004B77;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.circle-button:hover {
+  transform: scale(1.2); /* Zoom effect */
+  background-color: #F7C52A; /* Color change on hover */
+}
+
+/* Active State Styling */
+.circle-button.active {
+  background-color: #F7C52A; /* Highlight color */
+  transform: scale(1.3); /* Slightly larger zoom effect */
+}

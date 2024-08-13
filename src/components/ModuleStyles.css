@@ -1,0 +1,91 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* Background color */
+}
+
+/* Module Container */
+.module-container {
+  padding: 20px; /* Padding for spacing */
+  max-width: 100%; /* Full width container */
+  margin: 20px auto; /* Center container */
+  background-color: #F9F9F9; /* Light background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Title and Description */
+.component-title {
+  text-align: center;
+  font-size: 36px; /* Font size for title */
+  color: #004B77; /* Primary Navy Blue */
+  margin-bottom: 15px; /* Space below the title */
+  font-weight: bold;
+}
+
+.description-box {
+  font-size: 24px; /* Font size for description */
+  color: #333333; /* Dark text color */
+  margin: 20px auto; /* Margin for spacing */
+  line-height: 1.6; /* Line height for readability */
+  text-align: left; /* Align text to the left */
+  max-width: 1100px; /* Max width for readability */
+  padding: 10px; /* Padding inside the box */
+  background-color: transparent; /* Transparent background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Images Container */
+.component-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+  gap: 20px; /* Space between images */
+  margin: 30px 0; /* Margin around the grid */
+}
+
+/* Portrait Image Styling */
+.component-images img {
+  width: 100%; /* Full width of the grid item */
+  height: 450px; /* Fixed height for images */
+  border-radius: 10px; /* Rounded corners */
+  object-fit: cover; /* Cover the container */
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Alternating Pattern */
+.component-images img:nth-child(odd) {
+  transform: translateY(-10px); /* Move up for odd images */
+}
+
+.component-images img:nth-child(even) {
+  transform: translateY(10px); /* Move down for even images */
+}
+
+/* Hover Effect */
+.component-images img:hover {
+  transform: scale(1.1) translateY(0); /* Zoom on hover */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Media Query for Phones */
+@media (max-width: 720px) {
+  .component-title {
+    font-size: 24px; /* Smaller font size for small screens */
+  }
+
+  .component-description {
+    font-size: 14px; /* Adjusted font size for small screens */
+  }
+
+  .component-images {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid for small screens */
+    gap: 10px; /* Smaller gap between images */
+  }
+
+  .component-images img {
+    height: 200px; /* Adjust height for smaller screens */
+  }
+}

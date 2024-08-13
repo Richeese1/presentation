@@ -1,0 +1,80 @@
+/* Container for the homepage layout */
+.homepage-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of items */
+  justify-content: space-around; /* Distribute items evenly */
+  align-items: flex-start; /* Align items at the top */
+  padding: 20px; /* Padding around the container */
+  gap: 20px; /* Space between items */
+}
+
+/* Flexbox Item Container */
+.flexbox-item {
+  display: flex;
+  flex-direction: column; /* Arrange image and description vertically */
+  align-items: center; /* Center content horizontally */
+  width: 250px; /* Default width of each item */
+  height: 350px; /* Default height of each item */
+  margin: 10px; /* Margin around each item */
+}
+
+/* Image Styling */
+.flexbox-item img {
+    margin-top: 110px;
+  width: 100%; /* Full width of the container */
+  height: 315px; /* Fixed height for the image */
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  border-radius: 8px; /* Rounded corners for images */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Description Box Styling */
+.description-box1 {
+    font-weight: 50px;
+  margin-top: 10px; /* Space between image and description */
+  width: 100%; /* Full width of the container */
+  background-color: #f4f4f4; /* Light background for readability */
+  padding: 10px; /* Padding inside the description box */
+  border-radius: 8px; /* Rounded corners */
+  text-align: left; /* Center text within the description box */
+  font-size: 18px; /* Font size for the description */
+  color: #333; /* Text color */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+/* Media Query for 1280x720 Resolution */
+@media (max-width: 1280px) and (min-width: 720px) {
+  .homepage-container {
+    flex-direction: row; /* Arrange items in a row */
+    gap: 15px; /* Adjust gap between items */
+  }
+
+  .flexbox-item {
+    width: 250px; /* Keep width the same */
+    height: 350px; /* Keep height the same */
+  }
+
+  .description-box1 {
+    font-size: 13px; /* Adjust font size for medium screens */
+    padding: 8px; /* Adjust padding for medium screens */
+  }
+}
+
+/* Media Query for Smaller Screens (Mobile) */
+@media (max-width: 720px) {
+  .homepage-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .flexbox-item {
+    width: 80%; /* Adjust width for smaller screens */
+    height: auto; /* Adjust height to fit content */
+  }
+
+  .description-box1 {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+}

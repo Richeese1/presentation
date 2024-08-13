@@ -1,10 +1,17 @@
 .App {
-  text-align: center;
+  display: flex;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.main-content {
+  margin-left: 240px; /* Width of the side navigation bar */
+  margin-top: 60px; /* Height of the header */
+  padding: 16px;
+  flex: 1;
 }
 
 @media (prefers-reduced-motion: no-preference) {

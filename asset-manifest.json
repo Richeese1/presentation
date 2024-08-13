@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Richeese1/presentation.git/static/css/main.d037251e.css",
+    "main.js": "/Richeese1/presentation.git/static/js/main.cd76c6cc.js",
+    "static/js/453.74c482c8.chunk.js": "/Richeese1/presentation.git/static/js/453.74c482c8.chunk.js",
+    "index.html": "/Richeese1/presentation.git/index.html",
+    "main.d037251e.css.map": "/Richeese1/presentation.git/static/css/main.d037251e.css.map",
+    "main.cd76c6cc.js.map": "/Richeese1/presentation.git/static/js/main.cd76c6cc.js.map",
+    "453.74c482c8.chunk.js.map": "/Richeese1/presentation.git/static/js/453.74c482c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d037251e.css",
+    "static/js/main.cd76c6cc.js"
+  ]
+}
